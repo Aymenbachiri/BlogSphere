@@ -5,7 +5,7 @@ export default function HamburgerIcon() {
       width="30px"
       height="30px"
       viewBox="0 0 24 24"
-      color="black"
+      className="text-black dark:text-white"
     >
       <path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path>
     </svg>

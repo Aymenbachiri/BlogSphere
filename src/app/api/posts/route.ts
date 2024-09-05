@@ -38,14 +38,13 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const { creator, title, description, category, imageurl } = parsedBody.data;
+    const { creator, title, description, imageurl } = parsedBody.data;
 
     await connectToDB();
 
     const newPost = new Post({
       title,
       description,
-      category,
       imageurl,
       creator,
     });
